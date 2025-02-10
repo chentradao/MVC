@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../OrderDetailURL" method="post">
+        <input type="hidden" name="service" value="insertOrderDetail">
+        <caption>Insert OrderDetail</caption>
+        <table>
+            <tr>
+                <td><label for="OrderID">Order</label></td>
+                <td><select name="OrderID" id="OrderID">
+                    <option value="10248">VINET</option>
+                    <option value="10249">TOMSP</option>
+                    <option value="10250">HANAR</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="ProductID">Product</label></td>
+                <td><select name="ProductID" id="ProductID">
+                    <option value="13">Konbu</option>
+                    <option value="14">Tofu</option>
+                    <option value="15">Genen Shouyu</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="UnitPrice">UnitPrice</label></td>
+                <td><input type="text" name="UnitPrice"></td>
+            </tr>
+            <tr>
+                <td><label for="Quantity">Quantity</label></td>
+                <td><input type="text" name="Quantity"></td>
+            </tr>
+            <tr>
+                <td><label for="Discount">Discount</label></td>
+                <td><input type="text" name="Discount"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="insert">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

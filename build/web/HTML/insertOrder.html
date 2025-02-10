@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../OrderURL" method="post">
+        <input type="hidden" name="service" value="insertOrder">
+        <caption>Insert Order</caption>
+        <table>
+            <tr>
+                <td><label for="CustomerID">Customer</label></td>
+                <td><select name="CustomerID" id="CustomerID">
+                    <option value="VINET">VINET</option>
+                    <option value="TOMSP">TOMSP</option>
+                    <option value="HANAR">HANAR</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="EmployeeID">Employee</label></td>
+                <td><select name="EmployeeID" id="EmployeeID">
+                    <option value="1">Davolio</option>
+                    <option value="2">Fuller</option>
+                    <option value="3">Leverling</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="OrderDate">OrderDate</label></td>
+                <td><input type="text" name="OrderDate"></td>
+            </tr>
+            <tr>
+                <td><label for="RequiredDate">RequiredDate</label></td>
+                <td><input type="text" name="RequiredDate"></td>
+            </tr>
+            <tr>
+                <td><label for="ShippedDate">ShippedDate</label></td>
+                <td><input type="text" name="ShippedDate"></td>
+            </tr>
+            <tr>
+                <td><label for="ShipVia">ShipVia</label></td>
+                <td><select name="ShipVia" id="ShipVia">
+                    <option value="1">Speedy Express</option>
+                    <option value="2">United Package</option>
+                    <option value="3">Federal Shipping</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="Freight">Freight</label></td>
+                <td><input type="number" name="Freight" step="0.01" required></td>
+            </tr>
+            <tr>
+                <td><label for="ShipName">ShipName</label></td>
+                <td><input type="text" name="ShipName"></td>
+            </tr>
+            <tr>
+                <td><label for="ShipAddress">ShipAddress</label></td>
+                <td><input type="text" name="ShipAddress"></td>
+            </tr>
+            <tr>
+                <td><label for="ShipCity">ShipCity</label></td>
+                <td><input type="text" name="ShipCity"></td>
+            </tr>
+            <tr>
+                <td><label for="ShipRegion">ShipRegion</label></td>
+                <td><input type="text" name="ShipRegion"></td>
+            </tr>
+            <tr>
+                <td><label for="ShipPostalCode">ShipPostalCode</label></td>
+                <td><input type="text" name="ShipPostalCode"></td>
+            </tr>
+            <tr>
+                <td><label for="ShipCountry">ShipCountry</label></td>
+                <td><input type="text" name="ShipCountry"></td>
+            </tr>
+            <tr>
+                <td><label for="OrderStatus">OrderStatus</label></td>
+                <td><select name="OrderStatus" id="OrderStatus">
+                    <option value="0">Discontinue</option>
+                    <option value="1">Continue</option>
+                </select>
+                </td>
+            </tr>  
+            <tr>
+                <td>
+            <input type="submit" name="submit" value="insertOrder">
+            <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../EmployeeURL" method="post">
+        <input type="hidden" name="service" value="insertEmployees">
+        <caption>Insert Employees</caption>
+        <table>
+            <tr>
+                <td><label for="LastName">LastName</label></td>
+                <td><input type="text" name="LastName"></td>
+            </tr>
+            <tr>
+                <td><label for="FirstName">FirstName</label></td>
+                <td><input type="text" name="FirstName"></td>
+            </tr>
+            <tr>
+                <td><label for="Title">Title</label></td>
+                <td><input type="text" name="Title"></td>
+            </tr>
+            <tr>
+                <td><label for="TitleOfCourtesy">TitleOfCourtesy</label></td>
+                <td><input type="text" name="TitleOfCourtesy"></td>
+            </tr>
+            <tr>
+                <td><label for="BirthDate">BirthDate</label></td>
+                <td><input type="text" name="BirthDate"></td>
+            </tr>
+            <tr>
+                <td><label for="HireDate">HireDate</label></td>
+                <td><input type="text" name="HireDate"></td>
+            </tr>
+            <tr>
+                <td><label for="Address">Address</label></td>
+                <td><input type="text" name="Address"></td>
+            </tr>
+            <tr>
+                <td><label for="City">City</label></td>
+                <td><input type="text" name="City"></td>
+            </tr>
+            <tr>
+                <td><label for="Region">Region</label></td>
+                <td><input type="text" name="Region"></td>
+            </tr>
+            <tr>
+                <td><label for="PostalCode">PostalCode</label></td>
+                <td><input type="text" name="PostalCode"></td>
+            </tr>
+            <tr>
+                <td><label for="Country">Country</label></td>
+                <td><input type="text" name="Country"></td>
+            </tr>
+            <tr>
+                <td><label for="HomePhone">HomePhone</label></td>
+                <td><input type="text" name="HomePhone"></td>
+            </tr>
+            <tr>
+                <td><label for="Extension">Extension</label></td>
+                <td><input type="text" name="Extension"></td>
+            </tr>
+            <tr>
+                <td><label for="Photo">Photo</label></td>
+                <td><input type="text" name="Photo"></td>
+            </tr>
+            <tr>
+                <td><label for="Notes">Notes</label></td>
+                <td><input type="text" name="Notes"></td>
+            </tr>
+            <tr>
+                <td><label for="ReportsTo">ReportsTo</label></td>
+                <td><select name="ReportsTo" id="ReportsTo">
+                    <option value="2">Andrew</option>
+                    <option value="5">Steven</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="PhotoPath">PhotoPath</label></td>
+                <td><input type="text" name="PhotoPath"></td>
+            </tr>
+            <tr>
+                <td><label for="EmployeeStatus">EmployeeStatus</lable></td>
+                <td><select name="EmployeeStatus" id="EmployeeStatus">
+                        <option value="0">Discontinue</option>
+                        <option value="1">Continue</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="insertEmployees">
+                    <input type="reset" value="Clear">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>

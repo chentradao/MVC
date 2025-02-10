@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="../EmpTerritoryURL" method="post">
+        <input type="hidden" name="service" value="insertEmployeeTe">
+        <caption>Insert EmployeeTerritories</caption>
+        <table>
+            <tr>
+                <td><label for="EmployeeID">Employee</label></td>
+                <td><select name="EmployeeID" id="EmployeeID">
+                    <option value="1">Nancy</option>
+                    <option value="2">Andrew</option>
+                    <option value="3">Janet</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><label for="TerritoryID">Territory</label></td>
+                <td><select name="TerritoryID" id="TerritoryID">
+                    <option value="01581">Westboro</option>
+                    <option value="01730">Bedford</option>
+                    <option value="01833">Georgetow</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit" name="submit" value="insertEmployeeTe"></td>
+                <td><input type="reset" value="Clear"></td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
